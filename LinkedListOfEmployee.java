@@ -36,16 +36,6 @@ public class LinkedListOfEmployee {
 		return counter;
 	}
 	
-	public Employee getOldestEmployee() {
-		Employee oldest = null;
-		Node curr = head;
-		while (curr != null) {
-			if(curr.getData().getAge() > oldest.getAge())
-				oldest = curr.getData();
-			curr = curr.getNext();
-		}
-		return oldest;
-	}
 	
 	public LinkedListOfEmployee getEmployees(String g) {
 		LinkedListOfEmployee newList = new LinkedListOfEmployee();
